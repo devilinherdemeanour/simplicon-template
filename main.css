@@ -1,0 +1,519 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --standard: 1425px;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#Header {
+    width: var(--standard);
+    height: 335px;
+    background: crimson;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Header h1 {
+    color: white;
+    display: block;
+}
+
+#Header p {
+    color: gray;
+    display: block;
+}
+
+#Header .logo {
+    width: 200px;
+    height: 200px;
+}
+
+#Header nav ul li {
+    float: left;
+    margin: 0px 5px;
+    list-style-type: none;
+}
+
+#Header nav ul li a {
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#Header nav ul li a:hover {
+    color: black;
+    background: white;
+    border-radius: 3px;
+    border-color: white;
+    transition-duration: 0.1s;
+}
+
+#Main .content-1 {
+    width: var(--standard);
+    height: 700px;
+    background: #2c2e32;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Main .content-1 .content-previous a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 30px 25px;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+
+#Main .content-1 .content-previous a:hover {
+    color: rgb(70, 70, 70);
+    border: 2px solid crimson;
+    border-radius: 3px;
+    background: crimson;
+    transition-duration: 0.3s;
+}
+
+#Main .content-1 .content-next a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 30px 25px;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+
+#Main .content-1 .content-next a:hover {
+    color: rgb(70, 70, 70);
+    border: 2px solid crimson;
+    border-radius: 3px;
+    background: crimson;
+    transition-duration: 0.3s;
+}
+
+#Main .banner-image-1 {
+    float: left;
+    margin-right: 30px;
+}
+
+#Main .banner-info-1 {
+    width: 900px;
+    color: white;
+    padding: 20px;
+    padding-right: 50px;
+}
+
+#Main .banner-info-1 h2 {
+    font-size: 36px;
+    padding-bottom: 30px;
+}
+
+#Main .banner-info-1 p {
+    padding-bottom: 30px;
+}
+
+#Main .content-1 .banner-1 .banner-info-1 a {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 30px 25px;
+    border: 2px solid white;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+#Main .content-1 .banner-1 .banner-info-1 a:hover {
+    color: rgb(70, 70, 70);
+    border: 2px solid crimson;
+    border-radius: 3px;
+    background: crimson;
+    transition-duration: 0.3s;
+}
+
+#Main .content-2 {
+    width: var(--standard);
+    height: 660px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#Main .content-2 .banner-1 {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#Main .content-2 .banner-1 img {
+    width: 300px;
+    height: 300px;
+    border: 1px solid none;
+    border-radius: 150px;
+    outline: 10px solid rgba(128, 128, 128, 0.295);
+}
+
+#Main .content-2 .banner-1 .name{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#Main .content-2 .banner-1 .name:hover {
+    color: crimson;
+    transition: 0.3s;
+}
+
+#Main .content-2 .banner-1 p {
+    color: gray;
+}
+
+#Main .content-2 .banner-1 .button {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+#Main .content-2 .banner-1 .button:hover {
+    color: white;
+    background: crimson;
+    border-color: crimson;
+    transition: 0.3s;
+}
+
+#Main .content-3 {
+    width: var(--standard);
+    height: 128px;
+    background: #2c2e32;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#Main .content-3 h2 {
+    display: inline-block;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#Main .content-3 p {
+    display: inline-block;
+    color: gray;
+}
+
+#Main .content-4 {
+    width: var(--standard);
+    height: 645px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Main .content-4 .navigation {
+    width: var(--standard);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#Main .content-4 .navigation ul li {
+    float: left;
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+#Main .content-4 .navigation ul li:last-child {
+    margin-right: 0px;
+}
+
+#Main .content-4 .navigation ul li a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+#Main .content-4 .navigation ul li a:hover {
+    color: white;
+    background: crimson;
+    border-color: crimson;
+    transition: 0.3s;
+}
+
+#Main .content-4 .pictures .pic-flex{
+    width: var(--standard);
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#Main .content-4 .pictures .pic-flex div{
+    width: 250px;
+    height: 250px;
+}
+
+#Main .content-4 .pictures img {
+    width: 219px;
+    height: 219px;
+}
+
+
+#Main .content-5 {
+    width: var(--standard);
+    height: 128px;
+    background: crimson;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#Main .content-5 h2 {
+    display: inline-block;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#Main .content-5 p {
+    display: inline-block;
+    color: gray;
+}
+
+#Main .content-6 {
+    display: flex;
+    width: var(--standard);
+    height: 537px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Main .content-6 div {
+    margin-bottom: 30px;
+}
+
+#Main .content-6 div:first-child {
+    margin-top: 60px;
+}
+
+#Main .content-6 div:last-child {
+    margin-bottom: 0px;
+}
+
+#Main .content-6 .content {
+    width: var(--standard);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Main .content-6 .content .small img {
+    border: 1px solid none;
+    border-radius: 100px;
+    width: 138px;
+    height: 138px;
+}
+
+#Main .content-6 .content .medium img {
+    width: 184px;
+    height: 184px;
+    border: 1px solid none;
+    border-radius: 100px;
+}
+
+#Main .content-6 .content .large img {
+    width: 230px;
+    height: 230px;
+    border: 1px solid none;
+    border-radius: 200px;
+    outline: 5px solid crimson;
+    outline-offset: 5px;
+}
+
+#Main .content-6 .content .previous-next a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 600px;
+    padding: 15px;
+}
+
+#Main .content-6 .content .previous-next a:hover{
+    background: crimson;
+    color: white;
+    border: 2px solid crimson;
+    border-radius: 600px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+#Main .content-6 p {
+    color: gray;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 5px solid rgba(70, 70, 70, 0.2);
+    border-bottom: 5px solid rgb(70, 70, 70, 0.2);
+    font-size: 13px;
+    line-height: 25px;
+}
+
+
+#Main .content-7 {
+    width: var(--standard);
+    height: 128px;
+    background: #2c2e32;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#Main .content-7 h2 {
+    display: inline-block;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#Main .content-7 p {
+    display: inline-block;
+    color: gray;
+}
+
+#Main .content-8 {
+    width: var(--standard);
+    height: 523px;
+    background: #3a3c42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Main .content-8 form p {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#Main .content-8 .part-1 input {
+    background: #3a3c42;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    width: 300px;
+    height: 50px;
+}
+
+#Main .content-8 .part-1 input:hover {
+    border: 2px solid crimson;
+    transition: 0.5s;
+}
+
+#Main .content-8 .part-2 input:hover {
+    border: 2px solid crimson;
+    transition: 0.5s;
+}
+
+#Main .content-8 .part-3 input:hover {
+    border: 2px solid crimson;
+    transition: 0.5s;
+}
+
+
+#Main .content-8 .part-1 input:first-child {
+    margin-right: 20px;
+}
+
+#Main .content-8 .part-2 input{
+    background: #3a3c42;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    width: 625.06px;
+    height: 130px;
+    margin-top: 20px;
+}
+
+#Main .content-8 .part-3 {
+    display: flex;
+    justify-content: center;
+}
+
+#Main .content-8 .part-3 input {
+    background: #3a3c42;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+}
+
+#Main .content-8 .part-4 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#Main .content-8 .part-4 input {
+    padding: 15px 30px;
+    background: rgb(22, 22, 22);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#Main .content-8 .part-4 input:hover {
+    background: crimson;
+    transition: 0.4s;
+}
+
+
+::placeholder {
+    text-align: left;
+    padding-left: 10px;
+}
+
+#Main .content-9 {
+    width: var(--standard);
+    height: 160px;
+    background: crimson;
+}
+
+#Main .content-10 {
+    width: var(--standard);
+    height: 127px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 25px;
+    color: gray;
+}
+
+#Main .content-10 p a{
+    text-decoration: none;
+    color: black;
+}
+
+#Main .content-10 p a:hover {
+    color: crimson;
+    transition: 0.3s;
+}
